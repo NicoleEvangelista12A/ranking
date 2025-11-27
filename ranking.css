@@ -54,18 +54,25 @@ button:hover {
    list-style: none; 
    padding: 0; 
    max-width: 500px; 
-   margin: auto; display: flex; 
-   flex-direction: column; 
-   margin-left: 7rem; 
+   margin: auto; 
+   display: flex; 
+   justify-content: center;
+   flex-direction: column;
+   position: relative;
+   top: 100px;
+   
   } 
+
   .lista li { 
     display: flex; 
     justify-content: space-between; 
     background: #a642be; 
     border: 1px solid #b670e4;
      padding: 1.4rem; 
-     margin: 0.6rem; 
+     margin: 0.5rem; 
      border-radius: 2rem; 
+     position: relative;
+     top: 200px;
 }
 
 .top1 { border-color: gold; }
@@ -78,22 +85,21 @@ button:hover {
 
 
 .ranking-card {
-    position: absolute;
-  top: 7rem; 
-  right: 2rem; 
+  position: absolute;                
+  left: 50%;            
+  transform: translateX(-50%); 
   display: flex;
-  gap: 1.5rem;
-  bottom: -1rem;
-  margin-bottom: 20rem;
+  justify-content: center;
+  top: 8rem;
+  gap: 8px;
 }
 
 .ranking-card > div {
-  display: flex;
-  flex-direction: column;
+ 
   background: #e77ceb;
   border: 1px solid #ddec56;
   border-radius: 1.7rem;
-  padding: 20px;
+  padding: 15px;
   width: 150px;
   color: #f8f8f8;
 }
@@ -114,7 +120,16 @@ button:hover {
   height: 80px;
   background: linear-gradient(to top, #96169b, #e77ceb);
   border-radius: 1.2rem;
+}
 
+.terceiro {
+  transform: scale(0.9);
+}
+.segundo {
+  transform: scale(0.9);
+}
+.primeiro {
+  transform: scale(1.2);
 }
 
 .avatar { font-size: 24px; margin-bottom: 5px; }
