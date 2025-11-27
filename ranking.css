@@ -95,7 +95,7 @@ button:hover {
 }
 
 .ranking-card > div {
- 
+ position: relative;
   background: #e77ceb;
   border: 1px solid #ddec56;
   border-radius: 1.7rem;
@@ -130,6 +130,22 @@ button:hover {
 }
 .primeiro {
   transform: scale(1.2);
+}
+
+.flutuante img {
+  width: 50px;             
+  height: 50px;             
+  opacity: 10;             
+  transform: translate(10, 0); 
+  z-index: 2;  
+}
+.flutuante {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2px;
+  transform: translate(-50%, -50%);
+  z-index: 2;  
 }
 
 .avatar { font-size: 24px; margin-bottom: 5px; }
