@@ -91,7 +91,7 @@ button:hover {
   display: flex;
   justify-content: center;
   top: 8rem;
-  gap: 8px;
+  gap: 20px;
 }
 
 .ranking-card > div {
@@ -102,10 +102,11 @@ button:hover {
   padding: 15px;
   width: 150px;
   color: #f8f8f8;
+ 
 }
 
 .primeiro .base {
-  height: 120px;
+  height: 98px;
   background: linear-gradient(to top, #db37aa, #e77ceb);
   border-radius: 1.2rem;
 }
@@ -113,11 +114,11 @@ button:hover {
 .segundo .base {
   height: 100px;
   background: linear-gradient(to top, #96169b, #e77ceb);
-  border-radius: 1.2rem;
+  border-radius: 0.9rem;
  
 }
 .terceiro .base {
-  height: 80px;
+  height: 97px;
   background: linear-gradient(to top, #96169b, #e77ceb);
   border-radius: 1.2rem;
 }
@@ -132,21 +133,28 @@ button:hover {
   transform: scale(1.2);
 }
 
-.flutuante img {
-  width: 50px;             
-  height: 50px;             
-  opacity: 10;             
-  transform: translate(10, 0); 
-  z-index: 2;  
-}
 .flutuante {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2px;
-  transform: translate(-50%, -50%);
-  z-index: 2;  
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  position: absolute;
+  top: 76px;           
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+     
 }
+
+.flutuante img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 90%;    
+   
+}
+
 
 .avatar { font-size: 24px; margin-bottom: 5px; }
 
